@@ -1,0 +1,10 @@
+{
+  "stryker-config": {
+    "reporters": [
+      "progress",
+      "html",
+      "cleartext"
+    ],
+    "project": "PodcastManager.ItunesCrawler.csproj"
+  }
+}
