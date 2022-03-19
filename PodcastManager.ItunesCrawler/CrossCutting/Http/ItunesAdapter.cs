@@ -116,7 +116,7 @@ public class ItunesAdapter : IItunesAdapter
                 result.AddRange(appleResult.Results);
             if (codes.Length < 40) break;
             codes = codes[40..];
-        }
+        }   
 
         return result.ToArray();
     }

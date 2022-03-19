@@ -17,7 +17,7 @@ var closing = new AutoResetEvent(false);
 
 MongoConfiguration.SetConventions();
 var repositoryFactory = new RepositoryFactory();
-var connectionFactory = new ConnectionFactory {HostName = RabbitConfiguration.Host};
+var connectionFactory = new ConnectionFactory {Uri = new Uri(RabbitConfiguration.Host)};
 
 var interactorFactory = new InteractorFactory();
 interactorFactory.SetConnectionFactory(connectionFactory);

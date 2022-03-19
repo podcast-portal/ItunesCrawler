@@ -3,7 +3,7 @@ namespace PodcastManager.ItunesCrawler.CrossCutting.Rabbit;
 public static class RabbitConfiguration
 {
     public static readonly string Host =
-        Environment.GetEnvironmentVariable("RabbitHost")
+        Environment.GetEnvironmentVariable("RabbitUrl")
         ?? "localhost";
 
     public static string ImportAllQueue { get; } =
