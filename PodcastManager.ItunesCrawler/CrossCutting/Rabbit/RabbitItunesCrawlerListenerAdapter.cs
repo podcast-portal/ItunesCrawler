@@ -25,9 +25,9 @@ public class RabbitItunesCrawlerListenerAdapter
         ListenTo<ImportAll>(RabbitConfiguration.ImportAllQueue,
             _ => interactorFactory.CreateGenre().Execute(), 2, false);
         ListenTo<Letter>(RabbitConfiguration.ImportLetterQueue,
-            interactorFactory.CreateLetter().Execute, 2, false);
+            interactorFactory.CreateLetter().Execute, 3, false);
         ListenTo<Page>(RabbitConfiguration.ImportPageQueue,
-            interactorFactory.CreatePage().Execute, 2, false);
+            interactorFactory.CreatePage().Execute, 3, false);
     }
     
     
