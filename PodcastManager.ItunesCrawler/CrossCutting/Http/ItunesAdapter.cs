@@ -9,8 +9,8 @@ namespace PodcastManager.ItunesCrawler.CrossCutting.Http;
 
 public class ItunesAdapter : IItunesAdapter
 {
-    public const string GenresUrl = "https://podcasts.apple.com/us/genre/podcasts/id26";
-    public const string PageUrl = "https://podcasts.apple.com/us/genre/podcasts-arts-books/id{0}?letter={1}&page={2}";
+    public const string GenresUrl = "https://podcasts.apple.com/it/genre/podcasts/id26";
+    public const string PageUrl = "https://podcasts.apple.com/it/genre/podcasts-arts-books/id{0}?letter={1}&page={2}";
     public const string PodcastUrl = "https://itunes.apple.com/lookup?id={0}";
     
     private IHttpClientFactory factory = null!;
